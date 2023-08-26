@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Utilities */
+.blue {
+    color: cyan;
+}
+
+/* .content-heading {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 80px 100px;
+} */
+/* Element based  */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d0149;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    background-color: #1d0149;
+    margin: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1d0149; */
+    color: cyan;
+    font-size: 17px;
+    z-index: 1;
+    /* box-shadow: 16px 0px 16px 8px rgba(0, 0, 0, 0.4); */
+}
+
+.logo {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    animation: slideRight 1s ease forwards;
+    transition: all 0.2s ease-in;
+}
+
+.logo:hover {
+    text-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.nav-list ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+.nav-list ul li {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.nav-list ul li a {
+    display: block;
+    text-decoration: none;
+    color: cyan;
+    text-transform: uppercase;
+    border: none;
+    /* transition: border 0.2s ease-in; */
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+
+.nav-list ul li a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.nav-list ul li a:hover::after {
+    width: 100%;
+    background: cyan;
+}
+
+.top-content {
+    background-color: #1d0149;
+    height: 100vh;
+    /* background-color: #ffcc70; */
+}
+
+.left-content {
+    float: left;
+    max-width: 50vw;
+    /* background-image: linear-gradient(to top right,#ffcc70,#c850c0,#4158D0); */
+}
+
+.left-content h1 {
+    padding: 100px 20px 10px 100px;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    animation: slideRight 1s ease forwards;
+}
+
+.right-content {
+    max-width: 50vw;
+    float: right;
+}
+
+.right-content img {
+    position: relative;
+    top: 50%;
+    right: 50%;
+    border-radius: 50%;
+    height: 50vh;
+    width: 50vh;
+    margin-top: 15vh;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    animation: slideLeft 1s ease forwards;
+}
+
+.icons {
+    position: relative;
+    left: 15%;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.icons i {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: cyan;
+    margin: 0 10px;
+    border: 2px solid cyan;
+    transition: all 0.2s ease-in;
+    /* animation: slideRight 1s ease forwards; */
+    animation-delay: calc(0.2s*var(--i));
+}
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    left: 15%;
+    margin: 0 10px;
+    padding: 20px 30px;
+    background-color: transparent;
+    border: 1px solid cyan;
+    color: cyan;
+    font-size: 20px;
+
+    /* animation: slideRight 1s ease forwards; */
+    transition: all 0.2s ease-in;
+}
+
+
+.btn:hover,
+.icons i:hover {
+    background-color: cyan;
+    color: #1d0149;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    transform: translateY(-4px);
+}
+
+.about,
+.skills {
+    /* background-color: #1d0149; */
+    height: 100vh;
+}
+
+.about h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.about .left-content img {
+    margin: 150px 200px;
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
+    /* margin-top: 15vh; */
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    animation: slideRight 1s ease forwards;
+}
+
+.about .right-content {
+    margin-top: 20px;
+    animation: slideLeft 1s ease forwards;
+}
+
+.about .right-content h1 {
+    font-size: 30px;
+}
+
+.about .right-content h1::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.about .right-content h1:hover::after {
+    width: 40%;
+    background: cyan;
+}
+
+.about .right-content p {
+    color: white;
+    text-align: left;
+    line-height: 35px;
+    margin: 50px;
+    font-size: 25px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.content-heading h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 80px 100px;
+}
+
+.skills-container {
+    width: 100%;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+
+}
+
+.skills-container h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.technical-bars .bar{
+    margin-top: 40px 0;
+    
+}
+
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+
+.technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: slideLeft 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    
+     
+    animation: animateBar 1s ease-in forwards;
+    width: 0;
+    transform-origin: left;
+}
+
+@keyframes animateBar {
+    100%{
+        width: 100%;
+        
+    }
+}
+
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: cyan;
+    position: absolute;
+    border-radius: 10px;
+    animation: animateBar 1s 1s ease-in-out forwards;
+    width: 0;
+    transform-origin: left;
+}
+
+
+
+.technical-bars .bar .progress-line .html span{
+    width: 90%;
+}
+
+/* Animations */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+}
+
+
