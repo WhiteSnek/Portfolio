@@ -23,6 +23,7 @@
     </nav>
     <main>
         <section class="top-content" id="home">
+            <div class="home-content">
             <div class="left-content">
                 <h1>Hello, My name is <span class="blue">Nikhil</span>, and I am a <br><span id="element"
                         class="blue"></span></h1>
@@ -41,22 +42,29 @@
             <div class="right-content">
                 <img src="resources/profile.jpeg" alt="">
             </div>
+        </div>
         </section>
         <section class="about" id="about">
-            <h1 class="content-heading">About <span class="blue">Me</span></h1>
-            <div class="left-content">
-                <img src="resources/profile.jpeg" alt="">
-            </div>
-            <div class="right-content">
-                <h1><span class="blue">Front End</span> Developer</h1>
-                <p>I am a passionate <span class="blue">front-end developer</span> with a knack for turning creative
-                    designs into seamless and user-friendly web experiences. With expertise in <span class="blue">HTML,
-                        CSS, and JavaScript</span>, I excel at crafting visually captivating and responsive websites
-                    that engage and delight users. I'm dedicated to staying up-to-date with the latest <span
-                        class="blue">web development</span> trends and best practices, ensuring that the projects I work
-                    on not only look great but also perform exceptionally well across various devices and browsers. My
-                    commitment to delivering outstanding user interfaces reflects my enthusiasm for making the digital
-                    world both <span class="blue">beautiful</span> and <span class="blue">functional</span>.</p>
+            <div class="about-content">
+                <h1 class="content-heading">About <span class="blue">Me</span></h1>
+                <div class="left-content">
+                    <img src="resources/profile.jpeg" alt="">
+                </div>
+                <div class="right-content">
+                    <h1><span class="blue">Front End</span> Developer</h1>
+                    <p>I am a passionate <span class="blue">front-end developer</span> with a knack for turning creative
+                        designs into seamless and user-friendly web experiences. With expertise in <span
+                            class="blue">HTML,
+                            CSS, and JavaScript</span>, I excel at crafting visually captivating and responsive websites
+                        that engage and delight users. I'm dedicated to staying up-to-date with the latest <span
+                            class="blue">web development</span> trends and best practices, ensuring that the projects I
+                        work
+                        on not only look great but also perform exceptionally well across various devices and browsers.
+                        My
+                        commitment to delivering outstanding user interfaces reflects my enthusiasm for making the
+                        digital
+                        world both <span class="blue">beautiful</span> and <span class="blue">functional</span>.</p>
+                </div>
             </div>
         </section>
         <div class="content-heading">
@@ -114,51 +122,52 @@
             <div class="skills-container">
                 <h1>Professional Skills</h1>
                 <div class="radial-bars-container">
-                <div class="radial-bars">
-                    <div class="radial-bar">
-                    <svg x='0px' y='0px' viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Creativity</div>
-                </div>
-                </div>
-                <div class="radial-bars">
-                    <div class="radial-bar">
-                    <svg x='0px' y='0px' viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">60%</div>
-                    <div class="text">Communication</div>
-                </div>
-                </div>
-                <div class="radial-bars">
-                    <div class="radial-bar">
-                        <svg x='0px' y='0px' viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                        </svg>
-
-                        <div class="percentage">80%</div>
-                        <div class="text">Problem Solving</div>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x='0px' y='0px' viewBox="0 0 200 200">
+                                <circle class="progress-bar" id="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-1" id="path1" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">90%</div>
+                            <div class="text">Creativity</div>
+                        </div>
                     </div>
-                </div>
-                <div class="radial-bars">
-                    <div class="radial-bar">
-                    <svg x='0px' y='0px' viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">80%</div>
-                    <div class="text">Team Work</div>
-                </div>
-            </div>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x='0px' y='0px' viewBox="0 0 200 200">
+                                <circle class="progress-bar" id="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-2" id="path2" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">60%</div>
+                            <div class="text">Communication</div>
+                        </div>
+                    </div>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x='0px' y='0px' viewBox="0 0 200 200">
+                                <circle class="progress-bar" id="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-3" id="path3" cx="100" cy="100" r="80"></circle>
+                            </svg>
+
+                            <div class="percentage">80%</div>
+                            <div class="text">Problem Solving</div>
+                        </div>
+                    </div>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x='0px' y='0px' viewBox="0 0 200 200">
+                                <circle class="progress-bar" id="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-4" id="path4" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">Team Work</div>
+                        </div>
+                    </div>
                 </div>
         </section>
     </main>
     <!-- Scripts -->
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/8dee7fcd8c.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
