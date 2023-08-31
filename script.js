@@ -116,7 +116,32 @@ const observer3 = new IntersectionObserver(entries =>{
         path4.classList.remove('path-4-animation');
     });
 });
+const observer4 = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+        const projectsList = entry.target.querySelector('.project-list');
+        if(entry.isIntersecting){
+            projectsList.classList.add('project-list-animation');
+            return;
+        }
+        projectsList.classList.remove('project-list-animation');
+    });
+});
+const observer5 = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+        const contactText = entry.target.querySelector('.contact-text');
+        const contactForm = entry.target.querySelector('.contact-form');
+        if(entry.isIntersecting){
+            contactText.classList.add('contact-text-animation');
+            contactForm.classList.add('contact-form-animation');
+            return;
+        }
+        contactText.classList.remove('contact-text-animation');
+        contactForm.classList.remove('contact-form-animation');
+    });
+});
 observer1.observe(document.querySelector('.home-content'));
 observer1.observe(document.querySelector('.about-content'));
 observer2.observe(document.querySelector('.technical-bars'));
 observer3.observe(document.querySelector('.radial-bars-container'));
+observer4.observe(document.querySelector('.container'));
+observer5.observe(document.querySelector('.contact'));
