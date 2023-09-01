@@ -10,8 +10,9 @@
 
 <body>
     <nav>
+        
         <div class="logo">Portfolio</div>
-        <div class="nav-list">
+        <div class="nav-list" id="nav-list">
             <ul>
                 <li><a href="#home" style="--i:1">Home</a></li>
                 <li><a href="#about" style="--i:2">About</a></li>
@@ -19,7 +20,12 @@
                 <li><a href="#projects" style="--i:4">Projects</a></li>
                 <li><a href="#contact" style="--i:5">Contact Me</a></li>
             </ul>
+            
         </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
     </nav>
     <main>
         <section class="top-content" id="home">
@@ -251,7 +257,17 @@
                 </div>
             </div>
         </section>
+        
     </main>
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <p>&copy;2023 | All rights reserved</p>
+    </footer>
     <!-- Scripts -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/8dee7fcd8c.js" crossorigin="anonymous"></script>

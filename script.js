@@ -145,3 +145,13 @@ observer2.observe(document.querySelector('.technical-bars'));
 observer3.observe(document.querySelector('.radial-bars-container'));
 observer4.observe(document.querySelector('.container'));
 observer5.observe(document.querySelector('.contact'));
+
+
+function myFunction() {
+    var x = document.getElementById("nav-list");
+    if (x.className === "nav-list") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-list";
+    }
+  }
